@@ -1,7 +1,7 @@
 <!--
  * @Descripttion: 多列选择器
  * @Date: 2021-09-26 14:15:51
- * @LastEditTime: 2021-09-27 16:34:50
+ * @LastEditTime: 2021-09-27 17:05:28
 -->
 <template>
   <page-layout ref="pageLayout" introduce="多列picker选择组件">

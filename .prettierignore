@@ -1,0 +1,8 @@
+dist
+build
+node_modules
+.vscode
+blank
+unpackage
+.lock
+.prettierignore

@@ -86,7 +86,10 @@
     "node-sass": "^4.14.1",
     "postcss-comment": "^2.0.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "eslint": "^7.9.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lint-staged": "^10.4.0"
   },
   "browserslist": [
     "Android >= 4",
@@ -94,5 +97,71 @@
   ],
   "uni-app": {
     "scripts": {}
+  },
+  "lint-staged": {
+    "*.md": "prettier --write",
+    "*.{ts,tsx,js,vue,less}": "prettier --write",
+    "*.{ts,tsx,js,vue}": "eslint --fix",
+    "*.{vue,css,less}": "stylelint --fix"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@myant/vue-ts"
+    ],
+    "globals": {
+      "uni": true
+    },
+    "rules": {
+      "no-shadow": "off",
+      "prefer-promise-reject-errors": "off",
+      "no-param-reassign": "off",
+      "import/prefer-default-export": "off",
+      "import/no-unresolved": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "no-underscore-dangle": "off",
+      "prefer-const": "off",
+      "one-var": "off",
+      "vue/no-side-effects-in-computed-properties": "off",
+      "vue/no-reserved-keys": "off",
+      "max-lines": [
+        "error",
+        {
+          "max": 500,
+          "skipBlankLines": true,
+          "skipComments": true
+        }
+      ]
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "@myant/stylelint-config"
+    ],
+    "rules": {
+      "unit-no-unknown": null,
+      "unit-allowed-list": [
+        "%",
+        "rpx",
+        "vh",
+        "px",
+        "em",
+        "rem",
+        "s",
+        "deg"
+      ],
+      "font-family-no-missing-generic-family-keyword": null
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": false,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "endOfLine": "lf",
+    "proseWrap": "never",
+    "jsxBracketSameLine": true
   }
 }
