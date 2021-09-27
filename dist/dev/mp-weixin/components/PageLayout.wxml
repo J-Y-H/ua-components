@@ -1,0 +1,1 @@
+<view class="layout data-v-775ed1b4"><view class="layout-top data-v-775ed1b4"><block wx:if="{{$slots.top}}"><slot name="top"></slot></block><block wx:else>{{introduce}}</block></view><view class="layout-body data-v-775ed1b4"><slot></slot></view></view>

@@ -1,0 +1,1 @@
+<multi-picker vue-id="7859036b-1" label="name" field="code" ref="__r" data-ref="region" data-event-opts="{{[['^columnChange',[['handleColumnChange']]],['^pickerChage',[['handePickerChage']]]]}}" onColumnChange="__e" onPickerChage="__e" class="data-v-ade920de" onVueInit="__l"></multi-picker>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "多列picker-view组件",
+  "usingComponents": {
+    "multi-picker": "/components/MultiPicker",
+    "page-layout": "/components/PageLayout"
+  }
+}

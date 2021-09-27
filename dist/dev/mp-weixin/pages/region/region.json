@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "选择省市区组件",
+  "usingComponents": {
+    "custom-region": "/components/CustomRegion",
+    "page-layout": "/components/PageLayout",
+    "custom-multi-region": "/components/CustomMultiRegion"
+  }
+}
