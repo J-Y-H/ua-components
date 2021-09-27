@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App'
+import { initApi } from '@/utils/baseInit'
 
 Vue.config.productionTip = false
+
+initApi()
 
 App.mpType = 'app'
 
