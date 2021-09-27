@@ -13,3 +13,13 @@
 页面样式概览：
 
 <img src="./docs/images/1.png" />
+
+##### 2. 多列选择组件
+
+[文档](./docs/多列选择组件.md)
+
+[demo](https://j-y-h.github.io/ua-components/dist/build/h5/#/pages/multiPicker/index)
+
+页面样式概览：
+
+<img src="./docs/images/2.png" />

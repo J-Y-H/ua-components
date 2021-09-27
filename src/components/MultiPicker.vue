@@ -1,7 +1,7 @@
 <!--
  * @Descripttion: 多列选择器
  * @Date: 2021-09-26 14:00:17
- * @LastEditTime: 2021-09-27 15:08:45
+ * @LastEditTime: 2021-09-27 17:56:54
 -->
 <template>
   <uni-popup ref="popup" type="bottom">
@@ -60,7 +60,7 @@ export default {
     // 滚动容器高度
     height: {
       type: String,
-      default: '500rpx'
+      default: '476rpx'
     },
     // 根据该字段来显示容器中的值
     label: {
@@ -76,7 +76,7 @@ export default {
   },
   data () {
     return {
-      indicatorStyle: `height: 40px;`,
+      indicatorStyle: `height: 68rpx;`,
       value: [], // 默认选中项，根据下标来确定
       currentValue: [], // 记录当前选中的下标
       columns: []
@@ -154,8 +154,9 @@ export default {
   background: #FFF;
 }
 .multi-picker-item {
-  height: 80rpx !important;
-  line-height: 80rpx;
+  height: 68rpx !important;
+  line-height: 68rpx;
+  font-size: 32rpx;
   align-items: center;
   justify-content: center;
   text-align: center;
